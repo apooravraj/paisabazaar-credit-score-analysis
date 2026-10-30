@@ -1,5 +1,15 @@
 # Paisabazaar Credit Score Analysis
 
-The brief describes a `Credit_Score` classification problem, although the project title mentions fraud. No data file was provided, so no findings or model metrics are claimed.
+This project explores customer data and classifies `Credit_Score` as Good, Standard, or Poor. Although the original project title mentions fraud, the dataset target is credit score—not fraud.
 
-Place the CSV or Excel dataset in `data/` or edit `DATA_PATH` in `paisabazaar_credit_score_analysis.ipynb`. Run notebook cells in order. It includes data quality checks, class balance, income/score, utilization/loans, card count, delayed payment, month patterns, and a customer-grouped holdout baseline. Customer and direct personal identifiers are excluded from predictors. Treat results as exploratory pending temporal validation, calibration, subgroup evaluation, and business review.
+## Dataset
+- 100,000 records and 28 columns
+- 12,500 customers, with 8 monthly records each
+- Credit score distribution: Standard 53.2%, Poor 29.0%, Good 17.8%
+- The raw CSV is not included in this repository.
+
+## Analysis
+The notebook checks data quality and explores income, age groups, credit utilization, credit card count, payment delays, monthly trends, and numeric correlations. It also builds a baseline classifier using a customer-grouped holdout.
+
+## Run the notebook
+Open the `.ipynb` file in Google Colab and provide `dataset (1).csv` when prompted. Run the cells from top to bottom. Model metrics are produced when the notebook runs.
